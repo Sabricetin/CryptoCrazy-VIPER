@@ -16,10 +16,9 @@ typealias EntryPoint = AnyView & UIViewController
 protocol AnyRouter {
     
     var entry : EntryPoint? {get}
-    static func startExecution () -> AnyRouter
     
+    static func startExecution () -> AnyRouter
 }
-
 class CryptoRouter : AnyRouter {
     
     var entry: EntryPoint?
@@ -33,23 +32,11 @@ class CryptoRouter : AnyRouter {
         var interactor : AnyInteractor = CryptoInteractor()
         
         view.presnter = presnter
-        
         presnter.view = view
         presnter.router = router
         presnter.ınteractor = interactor
-        
         interactor.presnter = presnter
-        
         router.entry = view as? EntryPoint
-        
-        
-        
-        
         return router
-        
-        
-        
-        
-        
     }
 }

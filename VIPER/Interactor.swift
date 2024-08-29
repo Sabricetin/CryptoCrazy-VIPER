@@ -12,15 +12,14 @@ import Foundation
 
 protocol AnyInteractor {
     var presnter : AnyPresenter? {get set}
+
     
     func downloadCryptos ()
 }
-
 class CryptoInteractor : AnyInteractor {
     var presnter: (any AnyPresenter)?
     
     func downloadCryptos() {
-        
         guard let url = URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json") else {
             return
         }
@@ -34,15 +33,10 @@ class CryptoInteractor : AnyInteractor {
                 
                 self?.presnter?.interactorDidDownloadCrypto(result: .success(cryptos))
                 
-                
             } catch {
                 self?.presnter?.interactorDidDownloadCrypto(result: .failure(NetworkError.ParsingFailed))
-                
             }
         }
         task.resume()
-            
     }
-    
-    
 }

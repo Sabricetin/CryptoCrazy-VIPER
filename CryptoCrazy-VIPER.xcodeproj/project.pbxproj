@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E494C4B2C80A23B002F2674 /* ExtensionsHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E494C4A2C80A23B002F2674 /* ExtensionsHex.swift */; };
 		1E71108B2C7C830900E2F2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71108A2C7C830900E2F2ED /* AppDelegate.swift */; };
 		1E71108D2C7C830900E2F2ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71108C2C7C830900E2F2ED /* SceneDelegate.swift */; };
 		1E7110942C7C830B00E2F2ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7110932C7C830B00E2F2ED /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E494C4A2C80A23B002F2674 /* ExtensionsHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsHex.swift; sourceTree = "<group>"; };
 		1E7110872C7C830900E2F2ED /* CryptoCrazy-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoCrazy-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E71108A2C7C830900E2F2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E71108C2C7C830900E2F2ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E494C4C2C80B023002F2674 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E494C4A2C80A23B002F2674 /* ExtensionsHex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1E71107E2C7C830900E2F2ED = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 				1E7110A42C7C83B100E2F2ED /* Presenter.swift */,
 				1E7110A62C7C83BF00E2F2ED /* Entity.swift */,
 				1E7110A82C7C83CB00E2F2ED /* Router.swift */,
+				1E494C4C2C80B023002F2674 /* Extensions */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -157,6 +168,7 @@
 				1E7110A92C7C83CB00E2F2ED /* Router.swift in Sources */,
 				1E7110A52C7C83B100E2F2ED /* Presenter.swift in Sources */,
 				1E71109F2C7C837200E2F2ED /* View.swift in Sources */,
+				1E494C4B2C80A23B002F2674 /* ExtensionsHex.swift in Sources */,
 				1E7110A72C7C83BF00E2F2ED /* Entity.swift in Sources */,
 				1E7110A32C7C83A500E2F2ED /* Interactor.swift in Sources */,
 				1E71108B2C7C830900E2F2ED /* AppDelegate.swift in Sources */,
